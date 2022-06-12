@@ -1,0 +1,86 @@
+	<!doctype html>
+	<html class="no-js" lang="">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Beat Typer</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta property="og:title" content="">
+		<meta property="og:type" content="">
+		<meta property="og:url" content="">
+		<meta property="og:image" content="">
+
+		<link rel="manifest" href="site.webmanifest">
+		<link rel="apple-touch-icon" href="icon.png">
+		<!-- Place favicon.ico in the root directory -->
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/typingArea.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<meta name="theme-color" content="#fafafa">
+	</head>
+
+	<body>
+	<!-- header -->
+	<header>
+		<h1 class="headline">
+			<a>Beat Typer</a>
+		</h1>
+	</header>
+		<!-- Add your site or application content here -->
+
+		<div class="progress-area">
+		<div id="player"></div>
+		<div>
+			<progress value="0" max="100" id="lyric-time"></progress>
+		</div>
+	</div>
+		<div>
+			<div id="player-box">
+				<div id="word-box">
+					<div id="kana" class="text-shadow">
+						<span id='correct-input-kana' class='correct-input' style='color:#FFF;'>あ</span>
+						<span id='kana-first-word' class='next-character-color' style='color:#FFF;position: relative;'></span>
+						<span id='kana-second-word' class='next-character-color' style='color:#FFF;'></span>
+						<span id='typing-word-kana' class='typing_word' style='color:#FFF;'></span>
+					</div>
+					<div id="count-anime"></div>
+					<div id="lyrics"><ruby>亜<rt>あ</rt></ruby></div>
+					<div id="roma" class="text-shadow">
+						<span id='correct-input-roma' class='correct-input' style='color:#FFF;'>a</span>
+						<span id='roma-first-word' class='next-character-color' style='color:#FFF;position: relative;'></span>
+						<span id='typing-word-roma' class='typing_word' style='color:#FFF;'></span>
+					</div>
+				</div>
+			</div>
+			<div class="progress-area">
+				<div id="skip-guide"></div>
+				<div>
+					<progress value="0" max="100" id="total-time"></progress>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="https://www.youtube.com/iframe_api"></script>
+		<script src="js/createRomaMap.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/fpsUpdate.js"></script>
+		<script src="js/keydown.js"></script>
+		<script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+		<script src="https://code.createjs.com/preloadjs-0.6.2.min.js"></script>
+		
+
+		<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+		<script>
+			window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+			ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+		</script>
+		<script src="https://www.google-analytics.com/analytics.js" async></script>
+	</body>
+
+	</html>
