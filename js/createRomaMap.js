@@ -10,7 +10,7 @@ var score_per_char = 0.0;
 //タイピングデータ作成
 let lyricsData
 function createTypingData() {
-	fetch("http://127.0.0.1:5500/lyrics/ロミオとシンデレラ.txt").then(function(response) {
+	fetch("lyrics/ロミオとシンデレラ.txt").then(function(response) {
 		return response.text()
 	}).then(function(data) {
 		lyricsData = data.replace(/\r/g, "");
